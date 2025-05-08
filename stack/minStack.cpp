@@ -2,9 +2,10 @@
 #include<stack>
 
 using namespace std;
-
 class MinStack {
 private:
+  // 2 stacks, the first one just normal stack
+  // another one store minimum until the current value
   stack<int> stk;
   stack<int> minstk;
 public:
